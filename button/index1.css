@@ -1,0 +1,46 @@
+/* Container to center the button */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4;
+}
+
+/* Base styles for the button */
+.animated-button {
+  position: relative; /* Establishes a positioning context for the pseudo-element */
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white; /* Initial text color */
+  background-color:red; /* Initial background color */
+  border: 2px solid #007bff; /* Border matching text color */
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden; /* Ensures the pseudo-element doesn't spill outside */
+  transition: color 0.4s ease; /* Smooth transition for text color */
+}
+/* Pseudo-element for the animated background */
+.animated-button::before {
+  content: ''; /* Necessary to display the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0; /* Initial width set to 0 */
+  background-color:rgba(0, 0, 0, 5); /* Background color on hover */
+  z-index: -3; /* Places the pseudo-element behind the text */
+  transition: width 0.8s ease; /* Smooth transition for width */
+}
+
+/* Hover effects */
+.animated-button:hover::before {
+  width: 100%; /* Expands the background to full width */
+  
+}
+
+.animated-button:hover {
+ /* Changes text color to white for contrast */
+ z-index: 0;
+}

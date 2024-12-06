@@ -1,0 +1,44 @@
+.container{
+    width: 100%;
+    height: 212px;
+    background-color: yellow;
+    border: 2px solid rebeccapurple;
+}
+.box{
+    height: 212px;
+    border: 2px solid green;
+    background-color: aqua;
+    width: 212px;
+    animation-name: adarsh;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+     animation-delay: 1s;
+     animation-fill-mode:forwards;
+}
+@keyframes adarsh {
+    0%{
+     width: 212px;
+     background-color: orange;
+    }
+   65%{
+        width: 70%;
+        background-color:white;
+    }
+    100%{
+        width: 100%;
+        background-color: green;
+    }
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation:raj 3s infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes raj{
+    0% { background-color: red; left: 0px; }
+  50% { background-color: yellow; left: 50px; }
+  100% { background-color: green; left: 100px; }
+}

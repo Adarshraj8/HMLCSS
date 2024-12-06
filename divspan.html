@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .divclass{
+            background-color: red;
+            display: inline;
+        }
+        #divbro{
+            background-color: yellow;
+        }
+        div{
+            background-color: green;
+        }
+        #ok{
+            color: red;
+            font-weight: bold;
+        }
+        span{
+            background-color: green;
+            display: block;
+        }
+    </style>
+    <script>
+        function changeText(){
+            document.getElementById("ok").innerHTML="okk dont come";
+        }
+    </script>
+</head>
+<body>
+ 
+    <div class="divclass">This is inside div</div>
+    <div id="divbro">This is inside div</div>
+    <p>heloo <span id="ok">okkk come</span> brother bsk lvde </p>
+    <button onclick="changeText()">click me lvde</button>
+    <span>this is span tag</span>
+</body>
+</html>

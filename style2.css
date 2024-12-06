@@ -1,0 +1,57 @@
+.box{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    background-image: linear-gradient(red,blue);
+    background-image: linear-gradient(to right,red,blue);
+    background-image: linear-gradient(to left,red,blue);
+    background-image: linear-gradient(to bottom,red,blue);
+    background-image: linear-gradient(to top,red,blue);
+    background-image: linear-gradient(90deg,red,blue,green);
+    background-image: linear-gradient(to bottom,rgba(255,0,0,0),rgba(0,0,255,1));
+    background-image: linear-gradient(orange,white,green);
+
+}
+.mydiv{
+    border: 1px solid black;
+    margin: 10px;
+    height: 300px;
+    width: 200px;
+    background-image: radial-gradient(circle,red,blue,orange);
+    background-image: radial-gradient(yellow 5%,orange 10%,red 85%);
+
+}
+
+h1{
+  text-shadow: 3px 3px 1px red;
+
+  text-shadow: 3px 3px 3px red,6px 6px 6px green; 
+  text-shadow: 3px 3px 1px red,5px 5px 5px green;
+}
+.boxer{
+    background-color:aqua ;
+   color: red;
+    width: 200px;
+    height: 200px;
+  
+    box-shadow: -10px -10px 10px blue,15px 15px 15px red;
+    box-shadow: 0 0 0 5px #000;
+}
+.fan{
+    
+    max-height: 100px;
+    border: 1px solid black;
+    overflow: scroll;
+}
+.mycol{
+    min-height: 100px;
+    margin: 10px;
+    border: 1px solid black;
+}
+#hello{
+    border: 1px solid black;
+    height: 100vh;
+    width: 200vw;
+    background-color: yellow;
+    text-align: center;
+}

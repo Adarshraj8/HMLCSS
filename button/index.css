@@ -1,0 +1,35 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.button{
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+    transition: transform 3s linear 2s;
+}
+.button:hover{
+    background-color: red;
+    transform:  translate(3px) ;
+    animation: adarsh 1s ease-in 1s infinite;
+}
+@keyframes adarsh{
+    0%{
+        background-color: orange;
+    }
+    50%{
+        background-color: palevioletred;
+    }
+    100%{
+        background-color: green;
+    }
+}
